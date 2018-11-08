@@ -62,7 +62,7 @@ body {
 
 .tm-welcome-text {
 	background-color: rgba(221, 221, 221, 0.35);
-	padding: 40px;	
+	/*padding: 40px;*/	
 }
 
 .tm-welcome-link {
@@ -288,7 +288,7 @@ body {
 
 .tm-content-box { margin-top: 60px; }
 .tm-content-box:first-child { margin-top: 0; }
-.tm-welcome-text { padding: 20px; }
+.tm-welcome-text { /*padding: 20px;*/ }
 .tm-welcome-boxes-container { width: 100%; }
 
 .tm-flex {
@@ -487,15 +487,15 @@ figure.effect-bubba:hover p {
 	}
 
 	.tm-welcome-box { 
-		max-width: 400px;
-		width: 49%;
+		max-width: 500px;
+		width: 100%;
 	}
 
 	.tm-section-title { margin-bottom: 30px; }
 
 	.tm-welcome-text { 
 		background-color: rgba(255,255,255,0.8);
-		padding: 40px;
+		/*padding: 40px;*/
 	}
 
 	.tm-content-box-home { margin-bottom: 126px; }
@@ -542,9 +542,9 @@ figure.effect-bubba:hover p {
 	}
 
 	.tm-main-content { margin-left: 290px; }
-	.tm-welcome-box { max-width: 340px; }
+	.tm-welcome-box { max-width: 610px; }
 	.tm-welcome-text { 
-		height: 245px;
+		/*height: auto;*/
 		padding: 30px 20px; 
 	}
 
@@ -569,8 +569,8 @@ figure.effect-bubba:hover p {
 
 	.tm-nav-item-link { padding: 30px 60px; }
 	.tm-main-content { margin-left: 370px; }
-	.tm-welcome-box { max-width: 390px; }
-	.tm-welcome-text { padding: 30px; }
+	.tm-welcome-box { max-width: 610px; }
+	.tm-welcome-text { /*padding: 30px;*/ }
 	.tm-section-title { margin-bottom: 20px; }
 	.tm-box-pad { padding: 45px; }
 	.tm-welcome-boxes-container { width: 780px; } /* Need to hard code width for IE */
@@ -594,7 +594,7 @@ figure.effect-bubba:hover p {
 	}
 
 	.tm-main-content { margin-left: 470px; }	
-	.tm-welcome-box { max-width: 400px; }
+	.tm-welcome-box { max-width: 610px; }
 	.tm-section-title { margin-bottom: 30px; }
 	.tm-welcome-text { padding: 40px; }
 	.tm-welcome-boxes-container { width: 820px; } /* Need to hard code width for IE */

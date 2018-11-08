@@ -138,6 +138,7 @@
     <Content Include="img\img-11-06.jpg" />
     <Content Include="img\img-11-07.jpg" />
     <Content Include="img\img-11-08.jpg" />
+    <Content Include="img\relaxing-3.jpg" />
     <Content Include="index.html" />
     <Content Include="js\jquery-1.11.3.min.js" />
     <Content Include="js\jquery.magnific-popup.min.js" />
