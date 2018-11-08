@@ -55,7 +55,7 @@ body {
 }
 
 .tm-welcome-box { 
-	max-width: 400px;
+	max-width: 610px;
 	margin-top: 30px;
 	width: 100%;
 }
@@ -196,7 +196,7 @@ body {
 }
 
 .tm-banner {
-	height: 150px;
+	height: auto;
 	padding: 0;
 }
 	
@@ -487,7 +487,7 @@ figure.effect-bubba:hover p {
 	}
 
 	.tm-welcome-box { 
-		max-width: 500px;
+		max-width: 610px;
 		width: 100%;
 	}
 

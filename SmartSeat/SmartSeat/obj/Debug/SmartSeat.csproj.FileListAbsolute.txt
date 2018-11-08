@@ -43,4 +43,3 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Help
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Mvc.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.pdb
-C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.csprojResolveAssemblyReference.cache
