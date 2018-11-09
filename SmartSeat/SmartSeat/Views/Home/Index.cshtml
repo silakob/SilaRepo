@@ -1,7 +1,8 @@
 ﻿
+@model SmartSeat.Models.DweetService.JsonDweet
 @{
     ViewBag.Title = "Index";
-}
+}   
 
 <!DOCTYPE html>
 <html lang="en">
@@ -74,7 +75,7 @@
                         <div class="tm-welcome-box">
                             <div class="tm-welcome-text">
                                 <h2 class="tm-section-title">Description about Smart Seat for Office Syndrome Detection</h2>
-                                <p>Description Description Description Description Description Description Description Description Description Description Description Description </p>
+                                <p>Description @(Model.with != null? Model.with[0].content.value.ToString():"") </p>
                             </div>
                             <a href="#" class="tm-welcome-link tm-button">Learn More</a>
                         </div>

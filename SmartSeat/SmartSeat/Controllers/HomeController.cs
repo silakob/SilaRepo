@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using SmartSeat.Models;
+using System.Threading;
 
 namespace SmartSeat.Controllers
 {
@@ -11,7 +10,27 @@ namespace SmartSeat.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View();
+            var waitHandle = new AutoResetEvent(false);
+            DweetService.JsonDweet dweetObj = new DweetService.JsonDweet();
+            ThreadPool.RegisterWaitForSingleObject(
+            waitHandle,
+            // Method to execute
+            (state, timeout) =>
+            {
+            dweetObj = DweetService.checkDweetValue();
+            // dweetObj.with[0].content.value;
+
+            },
+            // optional state object to pass to the method
+            null,
+            // Execute the method after 5 seconds
+            TimeSpan.FromSeconds(10),
+            // Set this to false to execute it repeatedly every 5 seconds
+            false
+            );
+
+
+            return View(dweetObj.with == null?new DweetService.JsonDweet():dweetObj);
         }
     }
 }
