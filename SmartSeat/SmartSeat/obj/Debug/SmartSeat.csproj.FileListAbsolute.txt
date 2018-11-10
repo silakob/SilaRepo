@@ -45,7 +45,6 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Help
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Mvc.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.pdb
-C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.csprojResolveAssemblyReference.cache
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.Azure.AppService.ApiApps.Service.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Swashbuckle.Core.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.IdentityModel.Tokens.Jwt.dll
