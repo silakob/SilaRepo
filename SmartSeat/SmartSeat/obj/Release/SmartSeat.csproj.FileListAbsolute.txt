@@ -43,3 +43,5 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Help
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Mvc.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Release\SmartSeat.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Release\SmartSeat.pdb
+C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Newtonsoft.Json.dll
+C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Newtonsoft.Json.xml

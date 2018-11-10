@@ -513,8 +513,8 @@ figure.effect-bubba:hover p {
 	.tm-services-description-container { margin-left: 300px; }
 
 	.grid figure {
-		width: 31%;
-		height: auto;
+		width: 610px;
+		height: 610px;
 		margin: 1.1666%;
 	}
 
@@ -552,8 +552,8 @@ figure.effect-bubba:hover p {
 	.tm-welcome-boxes-container { width: 688px; } /* Need to hard code width for IE */
 
 	.grid figure {
-		width: 325px;
-		height: 325px;
+		width: 610px;
+		height: 610px;
 		margin: 11px;
 	}
 
@@ -576,8 +576,8 @@ figure.effect-bubba:hover p {
 	.tm-welcome-boxes-container { width: 780px; } /* Need to hard code width for IE */
 
 	.grid figure { 
-		width: 254px;
-		height: 254px;
+		width: 610px;
+		height: 610px;
 		margin: 9px;
 	}
 
@@ -600,8 +600,8 @@ figure.effect-bubba:hover p {
 	.tm-welcome-boxes-container { width: 820px; } /* Need to hard code width for IE */
 
 	.grid figure { 
-		width: 280px;
-		height: 280px;
+		width: 610px;
+		height: 610px;
 		margin: 15px;
 	}
 
@@ -616,7 +616,7 @@ figure.effect-bubba:hover p {
 	display: -webkit-flex; 
 	display: -ms-flexbox; 
 	display: flex;
-	height: 100%; 
+	height: 300px; 
 }
 
 @media screen and (max-width: 564px) {

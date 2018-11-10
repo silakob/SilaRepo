@@ -23,6 +23,7 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.AI.Wi
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.ApplicationInsights.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Newtonsoft.Json.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Helpers.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Mvc.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Razor.dll
@@ -35,6 +36,7 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.AI.We
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.ApplicationInsights.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\Newtonsoft.Json.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Razor.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Webpages.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Webpages.Deployment.xml
@@ -43,3 +45,4 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Help
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Mvc.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.pdb
+C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Debug\SmartSeat.csprojResolveAssemblyReference.cache

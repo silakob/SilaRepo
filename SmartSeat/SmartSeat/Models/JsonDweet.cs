@@ -3,6 +3,7 @@ using System.Configuration;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace SmartSeat.Models
 {
@@ -28,6 +29,7 @@ namespace SmartSeat.Models
             public List<With> with { get; set; }
         }
 
+        [HttpPost]
         public static JsonDweet checkDweetValue()
         {
             string url = ConfigurationManager.AppSettings["UrlDweet"];

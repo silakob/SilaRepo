@@ -10,24 +10,28 @@ namespace SmartSeat.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            var waitHandle = new AutoResetEvent(false);
-            DweetService.JsonDweet dweetObj = new DweetService.JsonDweet();
-            ThreadPool.RegisterWaitForSingleObject(
-            waitHandle,
-            // Method to execute
-            (state, timeout) =>
-            {
-            dweetObj = DweetService.checkDweetValue();
-            // dweetObj.with[0].content.value;
+            //var waitHandle = new AutoResetEvent(false);
+            //DweetService.JsonDweet dweetObj = new DweetService.JsonDweet();
+            //ThreadPool.RegisterWaitForSingleObject(
+            //waitHandle,
+            //// Method to execute
+            //(state, timeout) =>
+            //{
+            //dweetObj = DweetService.checkDweetValue();
+            //// dweetObj.with[0].content.value;
 
-            },
-            // optional state object to pass to the method
-            null,
-            // Execute the method after 5 seconds
-            TimeSpan.FromSeconds(10),
-            // Set this to false to execute it repeatedly every 5 seconds
-            false
-            );
+            //},
+            //// optional state object to pass to the method
+            //null,
+            //// Execute the method after 5 seconds
+            //TimeSpan.FromSeconds(1),
+            //// Set this to false to execute it repeatedly every 5 seconds
+            //false
+            //);
+
+
+            DweetService.JsonDweet dweetObj = new DweetService.JsonDweet();
+            dweetObj = DweetService.checkDweetValue();
 
 
             return View(dweetObj.with == null?new DweetService.JsonDweet():dweetObj);
