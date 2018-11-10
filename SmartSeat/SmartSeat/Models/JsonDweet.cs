@@ -29,7 +29,9 @@ namespace SmartSeat.Models
             public List<With> with { get; set; }
         }
 
-        [HttpPost]
+
+
+
         public static JsonDweet checkDweetValue()
         {
             string url = ConfigurationManager.AppSettings["UrlDweet"];
@@ -43,5 +45,6 @@ namespace SmartSeat.Models
                 return returnObject;
             }
         }
+
     }
 }

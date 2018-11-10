@@ -36,5 +36,16 @@ namespace SmartSeat.Controllers
 
             return View(dweetObj.with == null?new DweetService.JsonDweet():dweetObj);
         }
+
+
+        [HttpPost]
+        public ActionResult CallAjax()
+        {
+            DweetService.JsonDweet dweetObj = new DweetService.JsonDweet();
+            dweetObj = DweetService.checkDweetValue();
+
+
+            return Json(dweetObj, JsonRequestBehavior.AllowGet);
+        }
     }
 }
