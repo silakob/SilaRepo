@@ -74,10 +74,16 @@
                     <div class="tm-welcome-boxes-container">
                         <div class="tm-welcome-box">
                             <div class="tm-welcome-text">
-                                <h2 class="tm-section-title">Description about Smart Seat for Office Syndrome Detection</h2>
-                                <p>Description <label class="lblAction"></label></p>
+                                <h2 class="tm-section-title">Office Syndrome (オフィス症候群)</h2>
+                                <p style="padding-right:30px;">
+                                    &nbsp;&nbsp;&nbsp;Office syndrome includes a number of conditions that affect “office workers”.
+                                    This occurs from sitting in front of a computer for long periods, or working repeatedly in one position to the point where physical health problems occur.
+                                    The areas at risk include the musculoskeletal system, the digestive system,
+                                    the cardiovascular system, hormonal system, and the eyes,
+                                    although physical therapy is mostly involved in the treatment of symptoms relating to the musculoskeletal system.
+                                </p>
                             </div>
-                            <a href="#" class="tm-welcome-link tm-button">Learn More</a>
+                            <a href="https://www.bumrungrad.com/en/rehabilitation-clinic-sathorn/conditions/office-syndromes" class="tm-welcome-link tm-button">Learn More</a>
                         </div>
                         <!--<div class="tm-welcome-box">
                             <div class="tm-welcome-text">
@@ -98,84 +104,101 @@
                         <figure class="effect-bubba">
                             <img id="imgAction" alt="Image 8" class="img-fluid" width="610" height="610">
                             <figcaption>
-                                <h2>Value<span> <label class="lblAction"></label></span></h2>
+                                <h2><span><label class="lblAction"></label></span></h2>
                                 <p>Fusce faucibus metus in augue</p>
                                 <a id="aAction" width="610" height="610"> View more</a>
                             </figcaption>
                         </figure>
 
                         @*@if (Model.with == null)
-                        {
-                            <figure class="effect-bubba">
-                                <img src="../../img/img-11-08.jpg" alt="Image 8" class="img-fluid">
-                                <figcaption>
-                                    <h2>Value<span> NULL</span></h2>
-                                    <p>Fusce faucibus metus in augue</p>
-                                    <a href="../../img/img-11-08.jpg" width="610" height="610"> View more</a>
-                                </figcaption>
-                            </figure>
-                        }
-                        else
-                        {
-                            switch (Model.with[0].content.value.ToString())
                             {
-                                case "A":
-                                    <figure class="effect-bubba">
-                                        <img src="../../img/img-11-03.jpg" alt="Image 3" class="img-fluid" width="610" height="610">
-                                        <figcaption>
-                                            <h2>Value<span> A</span></h2>
-                                            <p>Aenean rutrum enim a tellus suscipit</p>
-                                            <a href="../../img/img-11-03.jpg" width="610" height="610"> View more</a>
-                                        </figcaption>
-                                    </figure>
-                                    break;
-                                case "B":
-                                    <figure class="effect-bubba">
-                                        <img src="../../img/img-11-05.jpg" alt="Image 5" class="img-fluid" width="610" height="610">
-                                        <figcaption>
-                                            <h2>Value<span> B</span></h2>
-                                            <p>Morbi fermentum eget libero sed</p>
-                                            <a href="../../img/img-11-05.jpg" width="610" height="610"> View more</a>
-                                        </figcaption>
-                                    </figure>
-                                    break;
-                                case "C":
-                                    <figure class="effect-bubba">
-                                        <img src="../../img/img-11-07.jpg" alt="Image 7" class="img-fluid" width="610" height="610">
-                                        <figcaption>
-                                            <h2>Value<span> C</span></h2>
-                                            <p>Sed ut ipsum eu purus ullamcorper</p>
-                                            <a href="../../img/img-11-07.jpg"> View more</a>
-                                        </figcaption>
-                                    </figure>
-                                    break;
-                                case "D":
-                                    <figure class="effect-bubba">
-                                        <img src="../../img/img-11-08.jpg" alt="Image 8" class="img-fluid" width="610" height="610">
-                                        <figcaption>
-                                            <h2>Value<span> D</span></h2>
-                                            <p>Fusce faucibus metus in augue</p>
-                                            <a href="../../img/img-11-08.jpg"> View more</a>
-                                        </figcaption>
-                                    </figure>
-                                    break;
-                                default:
-                                    break;
+                                <figure class="effect-bubba">
+                                    <img src="../../img/img-11-08.jpg" alt="Image 8" class="img-fluid">
+                                    <figcaption>
+                                        <h2>Value<span> NULL</span></h2>
+                                        <p>Fusce faucibus metus in augue</p>
+                                        <a href="../../img/img-11-08.jpg" width="610" height="610"> View more</a>
+                                    </figcaption>
+                                </figure>
                             }
-                        }*@
+                            else
+                            {
+                                switch (Model.with[0].content.value.ToString())
+                                {
+                                    case "A":
+                                        <figure class="effect-bubba">
+                                            <img src="../../img/img-11-03.jpg" alt="Image 3" class="img-fluid" width="610" height="610">
+                                            <figcaption>
+                                                <h2>Value<span> A</span></h2>
+                                                <p>Aenean rutrum enim a tellus suscipit</p>
+                                                <a href="../../img/img-11-03.jpg" width="610" height="610"> View more</a>
+                                            </figcaption>
+                                        </figure>
+                                        break;
+                                    case "B":
+                                        <figure class="effect-bubba">
+                                            <img src="../../img/img-11-05.jpg" alt="Image 5" class="img-fluid" width="610" height="610">
+                                            <figcaption>
+                                                <h2>Value<span> B</span></h2>
+                                                <p>Morbi fermentum eget libero sed</p>
+                                                <a href="../../img/img-11-05.jpg" width="610" height="610"> View more</a>
+                                            </figcaption>
+                                        </figure>
+                                        break;
+                                    case "C":
+                                        <figure class="effect-bubba">
+                                            <img src="../../img/img-11-07.jpg" alt="Image 7" class="img-fluid" width="610" height="610">
+                                            <figcaption>
+                                                <h2>Value<span> C</span></h2>
+                                                <p>Sed ut ipsum eu purus ullamcorper</p>
+                                                <a href="../../img/img-11-07.jpg"> View more</a>
+                                            </figcaption>
+                                        </figure>
+                                        break;
+                                    case "D":
+                                        <figure class="effect-bubba">
+                                            <img src="../../img/img-11-08.jpg" alt="Image 8" class="img-fluid" width="610" height="610">
+                                            <figcaption>
+                                                <h2>Value<span> D</span></h2>
+                                                <p>Fusce faucibus metus in augue</p>
+                                                <a href="../../img/img-11-08.jpg"> View more</a>
+                                            </figcaption>
+                                        </figure>
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }*@
                     </div>
                 </div>
 
                 <div id="services" class="tm-content-box tm-gray-bg tm-services">
                     <div class="tm-services-img-container">
-                        <img src="../../img/450x900-01.jpg" alt="Green Field" class="img-fluid tm-services-img">
+                        <img src="../../img/run.jpg" alt="Green Field" class="img-fluid tm-services-img">
                     </div>
 
                     <div class="tm-box-pad tm-services-description-container">
-                        <h2 class="tm-section-title">View Exercise</h2>
-                        <p class="tm-section-description">Description about Smart Seat for Office Syndrome Detection </p>
-                        <p class="tm-section-description">Description about Smart Seat for Office Syndrome Detection</p>
-                        <p class="tm-section-description">Description about Smart Seat for Office Syndrome Detection</p>
+                        <h2 class="tm-section-title">Methods of Office Syndrome Treatment</h2>
+                        <ul>
+                            <li>
+                                <p class="tm-section-description">Medication </p>
+                            </li>
+
+                            <li>
+                                <p class="tm-section-description">Rehabilitation medicine, physical therapy to stretch the muscles, and measures to correct posture</p>
+                            </li>
+                            <li>
+                                <p class="tm-section-description">Modifying the work area, the work environment, and the nature of work to suit the individual</p>
+                            </li>
+                            <li>
+                                <p class="tm-section-description">Exercise to improve overall physical fitness</p>
+                            </li>
+                            <li>
+                                <p class="tm-section-description">Alternative medicine and therapies, such as acupuncture</p>
+                            </li>
+
+                        </ul>
+                        <br />
                         <p class="tm-section-description"> Thank you for visiting our site.</p>
                     </div>
 
@@ -257,76 +280,76 @@
     @*<script>
 
 
-        /* Google map
-        ------------------------------------------------*/
-        var map = '';
-        var center;
+            /* Google map
+            ------------------------------------------------*/
+            var map = '';
+            var center;
 
-        function initialize() {
-            var mapOptions = {
-                zoom: 16,
-                center: new google.maps.LatLng(37.769725, -122.462154),
-                scrollwheel: false
-            };
+            function initialize() {
+                var mapOptions = {
+                    zoom: 16,
+                    center: new google.maps.LatLng(37.769725, -122.462154),
+                    scrollwheel: false
+                };
 
-            map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
+                map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
 
-            google.maps.event.addDomListener(map, 'idle', function () {
-                calculateCenter();
-            });
+                google.maps.event.addDomListener(map, 'idle', function () {
+                    calculateCenter();
+                });
 
-            google.maps.event.addDomListener(window, 'resize', function () {
-                map.setCenter(center);
-            });
-        }
-
-        function calculateCenter() {
-            center = map.getCenter();
-        }
-
-        function loadGoogleMap() {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-            document.body.appendChild(script);
-        }
-
-        function setNavbar() {
-            if ($(document).scrollTop() > 160) {
-                $('.tm-sidebar').addClass('sticky');
-            } else {
-                $('.tm-sidebar').removeClass('sticky');
+                google.maps.event.addDomListener(window, 'resize', function () {
+                    map.setCenter(center);
+                });
             }
-        }
 
-        $(document).ready(function () {
+            function calculateCenter() {
+                center = map.getCenter();
+            }
 
-            // Single page nav
-            $('.tm-main-nav').singlePageNav({
-                'currentClass': "active",
-                offset: 20
-            });
+            function loadGoogleMap() {
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+                document.body.appendChild(script);
+            }
 
-            // Detect window scroll and change navbar
-            setNavbar();
+            function setNavbar() {
+                if ($(document).scrollTop() > 160) {
+                    $('.tm-sidebar').addClass('sticky');
+                } else {
+                    $('.tm-sidebar').removeClass('sticky');
+                }
+            }
 
-            $(window).scroll(function () {
+            $(document).ready(function () {
+
+                // Single page nav
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass': "active",
+                    offset: 20
+                });
+
+                // Detect window scroll and change navbar
                 setNavbar();
+
+                $(window).scroll(function () {
+                    setNavbar();
+                });
+
+                // Magnific pop up
+                $('.tm-gallery').magnificPopup({
+                    delegate: 'a', // child items selector, by clicking on it popup will open
+                    type: 'image',
+                    gallery: { enabled: true }
+                    // other options
+                });
+
+                // Google Map
+                loadGoogleMap();
             });
 
-            // Magnific pop up
-            $('.tm-gallery').magnificPopup({
-                delegate: 'a', // child items selector, by clicking on it popup will open
-                type: 'image',
-                gallery: { enabled: true }
-                // other options
-            });
-
-            // Google Map
-            loadGoogleMap();
-        });
-
-    </script>*@
+        </script>*@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script>
@@ -346,25 +369,27 @@
                         case 'A':
                             $("#imgAction").attr('src', '../../img/img-11-03.jpg');
                             $("#aAction").attr('href', '../../img/img-11-03.jpg');
-                            $(".lblAction").text('A');
+                            $(".lblAction").text('Left tilt'); // A
                             break;
                         case 'B':
                             $("#imgAction").attr('src', '../../img/img-11-05.jpg');
                             $("#aAction").attr('href', '../../img/img-11-05.jpg');
-                            $(".lblAction").text('B');
+                            $(".lblAction").text('Right tilt'); // B
                             break;
                         case 'C':
                             $("#imgAction").attr('src', '../../img/img-11-07.jpg');
                             $("#aAction").attr('href', '../../img/img-11-07.jpg');
-                            $(".lblAction").text('C');
+                            $(".lblAction").text('Forward tilt'); // C
                             break;
                         case 'D':
                             $("#imgAction").attr('src', '../../img/img-11-08.jpg');
                             $("#aAction").attr('href', '../../img/img-11-08.jpg');
-                            $(".lblAction").text('D');
+                            $(".lblAction").text('Backward tilt');// D
                             break;
                         default:
-                            $(".lblAction").text('NULL');
+                            $("#imgAction").attr('src', '../../img/Cushions.jpg');
+                            $("#aAction").attr('href', '../../img/Cushions.jpg');
+                            $(".lblAction").text('Center'); // NULL
                             break;
                     }
 
