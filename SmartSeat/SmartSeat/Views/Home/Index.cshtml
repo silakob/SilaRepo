@@ -367,24 +367,24 @@
                     var val = data.with[0].content.value;
                     switch (val) {
                         case 'A':
-                            $("#imgAction").attr('src', '../../img/img-11-03.jpg');
-                            $("#aAction").attr('href', '../../img/img-11-03.jpg');
-                            $(".lblAction").text('Left tilt'); // A
+                            $("#imgAction").attr('src', '../../img/LeftCushions.jpg');
+                            $("#aAction").attr('href', '../../img/LeftCushions.jpg');
+                            $(".lblAction").text('Left_tilt'); // A
                             break;
                         case 'B':
-                            $("#imgAction").attr('src', '../../img/img-11-05.jpg');
-                            $("#aAction").attr('href', '../../img/img-11-05.jpg');
-                            $(".lblAction").text('Right tilt'); // B
+                            $("#imgAction").attr('src', '../../img/RightCushions.jpg');
+                            $("#aAction").attr('href', '../../img/RightCushions.jpg');
+                            $(".lblAction").text('Right_tilt'); // B
                             break;
                         case 'C':
-                            $("#imgAction").attr('src', '../../img/img-11-07.jpg');
-                            $("#aAction").attr('href', '../../img/img-11-07.jpg');
-                            $(".lblAction").text('Forward tilt'); // C
+                            $("#imgAction").attr('src', '../../img/ForwardCushions.jpg');
+                            $("#aAction").attr('href', '../../img/ForwardCushions.jpg');
+                            $(".lblAction").text('Forward_tilt'); // C
                             break;
                         case 'D':
-                            $("#imgAction").attr('src', '../../img/img-11-08.jpg');
-                            $("#aAction").attr('href', '../../img/img-11-08.jpg');
-                            $(".lblAction").text('Backward tilt');// D
+                            $("#imgAction").attr('src', '../../img/BackwardCushions.jpg');
+                            $("#aAction").attr('href', '../../img/BackwardCushions.jpg');
+                            $(".lblAction").text('Backward_tilt');// D
                             break;
                         default:
                             $("#imgAction").attr('src', '../../img/Cushions.jpg');
@@ -393,7 +393,7 @@
                             break;
                     }
 
-                    setTimeout(requestData, 4000);
+                    //setTimeout(requestData, 4000);
                 },
                 failure: function (response) {
                     alert("failure : " + response.d);
