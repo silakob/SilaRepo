@@ -102,10 +102,9 @@
                         </div>
 
                         <figure class="effect-bubba">
-                            <img id="imgAction" alt="Image 8" class="img-fluid" width="610" height="610">
+                            <img id="imgAction" src="../../img/404error.jpg" class="img-fluid" width="610" height="610">
                             <figcaption>
                                 <h2><span><label class="lblAction"></label></span></h2>
-                                <p>Fusce faucibus metus in augue</p>
                                 <a id="aAction" width="610" height="610"> View more</a>
                             </figcaption>
                         </figure>
@@ -367,29 +366,34 @@
                     var val = data.with[0].content.value;
                     switch (val) {
                         case 'A':
-                            $("#imgAction").attr('src', '../../img/LeftCushions.jpg');
-                            $("#aAction").attr('href', '../../img/LeftCushions.jpg');
-                            $(".lblAction").text('Left_tilt'); // A
-                            break;
-                        case 'B':
-                            $("#imgAction").attr('src', '../../img/RightCushions.jpg');
-                            $("#aAction").attr('href', '../../img/RightCushions.jpg');
-                            $(".lblAction").text('Right_tilt'); // B
-                            break;
-                        case 'C':
-                            $("#imgAction").attr('src', '../../img/ForwardCushions.jpg');
-                            $("#aAction").attr('href', '../../img/ForwardCushions.jpg');
-                            $(".lblAction").text('Forward_tilt'); // C
-                            break;
-                        case 'D':
-                            $("#imgAction").attr('src', '../../img/BackwardCushions.jpg');
-                            $("#aAction").attr('href', '../../img/BackwardCushions.jpg');
-                            $(".lblAction").text('Backward_tilt');// D
-                            break;
-                        default:
                             $("#imgAction").attr('src', '../../img/Cushions.jpg');
                             $("#aAction").attr('href', '../../img/Cushions.jpg');
-                            $(".lblAction").text('Center'); // NULL
+                            $(".lblAction").text('Normal'); // A
+                            break;
+                        case 'B':
+                            $("#imgAction").attr('src', '../../img/BackwardCushions.jpg');
+                            $("#aAction").attr('href', '../../img/BackwardCushions.jpg');
+                            $(".lblAction").text('Over_Tilt_Backward'); // B
+                            break;
+                        case 'C':
+                            $("#imgAction").attr('src', '../../img/LeftCushions.jpg');
+                            $("#aAction").attr('href', '../../img/LeftCushions.jpg');
+                            $(".lblAction").text('Over_Tilt_Left'); // C
+                            break;
+                        case 'D':
+                            $("#imgAction").attr('src', '../../img/ForwardCushions.jpg');
+                            $("#aAction").attr('href', '../../img/ForwardCushions.jpg');
+                            $(".lblAction").text('Over_Tilt_Forward');// D
+                            break;
+                        case 'E':
+                            $("#imgAction").attr('src', '../../img/RightCushions.jpg');
+                            $("#aAction").attr('href', '../../img/RightCushions.jpg');
+                            $(".lblAction").text('Over_Tilt_Right');// D
+                            break;
+                        default:
+                            $("#imgAction").attr('src', '../../img/404error.jpg');
+                            $("#aAction").attr('href', '../../img/404error.jpg');
+                            $(".lblAction").text('404 Error'); // NULL
                             break;
                     }
 

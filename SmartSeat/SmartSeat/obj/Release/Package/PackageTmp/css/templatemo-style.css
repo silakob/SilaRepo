@@ -55,7 +55,7 @@ body {
 }
 
 .tm-welcome-box { 
-	max-width: 610px;
+	max-width: 660px;
 	margin-top: 30px;
 	width: 100%;
 }
@@ -187,7 +187,7 @@ body {
 }
 
 .tm-section-title {	
-	margin-bottom: 30px; 
+	margin-bottom: 10px; 
 	font-size: 1.8rem;
 }
 
@@ -487,11 +487,11 @@ figure.effect-bubba:hover p {
 	}
 
 	.tm-welcome-box { 
-		max-width: 610px;
+		max-width: 660px;
 		width: 100%;
 	}
 
-	.tm-section-title { margin-bottom: 30px; }
+	.tm-section-title { margin-bottom: 10px; }
 
 	.tm-welcome-text { 
 		background-color: rgba(255,255,255,0.8);
@@ -542,10 +542,10 @@ figure.effect-bubba:hover p {
 	}
 
 	.tm-main-content { margin-left: 290px; }
-	.tm-welcome-box { max-width: 610px; }
+	.tm-welcome-box { max-width: 660px; }
 	.tm-welcome-text { 
-		/*height: auto;*/
-		padding: 30px 20px; 
+		height: 355px;
+		padding: 30px 20px;
 	}
 
 	.tm-box-pad { padding: 30px; }
@@ -569,9 +569,9 @@ figure.effect-bubba:hover p {
 
 	.tm-nav-item-link { padding: 30px 60px; }
 	.tm-main-content { margin-left: 370px; }
-	.tm-welcome-box { max-width: 610px; }
+	.tm-welcome-box { max-width: 660px; }
 	.tm-welcome-text { /*padding: 30px;*/ }
-	.tm-section-title { margin-bottom: 20px; }
+	.tm-section-title { margin-bottom: 10px; }
 	.tm-box-pad { padding: 45px; }
 	.tm-welcome-boxes-container { width: 780px; } /* Need to hard code width for IE */
 
@@ -594,9 +594,9 @@ figure.effect-bubba:hover p {
 	}
 
 	.tm-main-content { margin-left: 470px; }	
-	.tm-welcome-box { max-width: 610px; }
-	.tm-section-title { margin-bottom: 30px; }
-	.tm-welcome-text { padding: 40px; }
+	.tm-welcome-box { max-width: 660px; }
+	.tm-section-title { margin-bottom: 10px; }
+	.tm-welcome-text { /*padding: 40px;*/ }
 	.tm-welcome-boxes-container { width: 820px; } /* Need to hard code width for IE */
 
 	.grid figure { 

@@ -162,7 +162,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="img\1200x800-01.jpg" />
+    <Content Include="img\404error.jpg" />
     <Content Include="img\450x900-01.jpg" />
+    <Content Include="img\BackwardCushions.jpg" />
+    <Content Include="img\Cushions.jpg" />
+    <Content Include="img\ForwardCushions.jpg" />
     <Content Include="img\img-11-01.jpg" />
     <Content Include="img\img-11-02.jpg" />
     <Content Include="img\img-11-03.jpg" />
@@ -171,7 +175,10 @@
     <Content Include="img\img-11-06.jpg" />
     <Content Include="img\img-11-07.jpg" />
     <Content Include="img\img-11-08.jpg" />
+    <Content Include="img\LeftCushions.jpg" />
     <Content Include="img\relaxing-3.jpg" />
+    <Content Include="img\RightCushions.jpg" />
+    <Content Include="img\run.jpg" />
     <Content Include="js\jquery-1.11.3.min.js" />
     <Content Include="js\jquery.magnific-popup.min.js" />
     <Content Include="js\jquery.singlePageNav.min.js" />

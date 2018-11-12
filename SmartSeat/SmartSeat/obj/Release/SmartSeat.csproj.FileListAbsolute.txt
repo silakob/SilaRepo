@@ -56,3 +56,4 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Identity
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Net.Http.Formatting.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Http.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\bin\System.Web.Http.WebHost.xml
+C:\Users\silak\Documents\GitHub\SilaRepo\SmartSeat\SmartSeat\obj\Release\SmartSeat.csprojResolveAssemblyReference.cache
