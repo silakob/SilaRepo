@@ -1,0 +1,130 @@
+﻿@model SmartLabel.Models.Promotion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Promotion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PromotionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PromotionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExpireDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifyDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifyDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FileName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FileName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhysicalPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhysicalPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IISPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IISPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User1.UserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User1.UserName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PromotionKey }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

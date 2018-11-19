@@ -1,0 +1,111 @@
+﻿@model IEnumerable<SmartLabel.Models.Promotion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PromotionName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IssueDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpireDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiscountRate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiscountPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ModifyDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Active)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FileName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhysicalPath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IISPath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.UserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User1.UserName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PromotionName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IssueDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExpireDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiscountRate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiscountPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifyDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Active)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FileName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhysicalPath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IISPath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.UserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User1.UserName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PromotionKey }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PromotionKey }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PromotionKey })
+        </td>
+    </tr>
+}
+
+</table>
