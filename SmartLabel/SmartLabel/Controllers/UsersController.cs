@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SmartLabel.Models;
+using System.Web.UI;
+using SmartLabel.Controllers;
 
 namespace SmartLabel.Controllers
 {
@@ -14,11 +16,44 @@ namespace SmartLabel.Controllers
     {
         private SmartDeviceEntities db = new SmartDeviceEntities();
 
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Authorize()
+        {
+            string UserName = Request.Form["UserName"];
+            string Password = Request.Form["Password"];
+            if (UserName == null || Password == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            User userArg = new Models.User();
+            userArg.UserName = UserName;
+            userArg.Password = Password;
+            User user = db.Users.Where(u => u.UserName == userArg.UserName && u.Password == userArg.Password && u.Active == 1).FirstOrDefault();
+            if (user == null)
+            {
+                TempData["Message"] = "Username or Password is wrong";
+                TempData["Type"] = "error";
+
+                return View("Login");
+            }
+            //return View(user);
+            Session["UserKey"] = user.UserKey;
+            return RedirectToAction("Main", "Home");
+        }
+
+
         // GET: Users
         public ActionResult Index()
         {
             return View(db.Users.ToList());
         }
+
 
         // GET: Users/Details/5
         public ActionResult Details(int? id)
@@ -34,6 +69,8 @@ namespace SmartLabel.Controllers
             }
             return View(user);
         }
+
+
         // POST: Users/Details/user
         [HttpPost]
         public ActionResult Details(User userArg)
@@ -42,7 +79,7 @@ namespace SmartLabel.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            User user = db.Users.Where(u => u.UserName == userArg.UserName && u.Password == userArg.Password).FirstOrDefault();
+            User user = db.Users.Where(u => u.UserName == userArg.UserName && u.Password == userArg.Password && u.Active == 1).FirstOrDefault();
             if (user == null)
             {
                 return HttpNotFound();
@@ -50,6 +87,7 @@ namespace SmartLabel.Controllers
             //return View(user);
             return RedirectToAction("LoggedIn");
         }
+
 
         public ActionResult LoggedIn()
         {
@@ -60,7 +98,7 @@ namespace SmartLabel.Controllers
             else
             {
                 return RedirectToAction("User");
-            }            
+            }
         }
 
 
@@ -73,20 +111,27 @@ namespace SmartLabel.Controllers
         // POST: Users/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "UserKey,UserName,Password,Email,PhoneNo,Address,UserType,CreateDate,ModifyDate,NameAndSurname,Active")] User user)
         {
             if (ModelState.IsValid)
             {
+                user.CreateDate = DateTime.Now;
+                user.ModifyDate = DateTime.Now;
+                user.Active = 1;
+                user.UserType = "C";
                 db.Users.Add(user);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
             return View(user);
-            
+
         }
+
 
         // GET: Users/Edit/5
         public ActionResult Edit(int? id)
@@ -102,6 +147,7 @@ namespace SmartLabel.Controllers
             }
             return View(user);
         }
+
 
         // POST: Users/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
@@ -119,6 +165,7 @@ namespace SmartLabel.Controllers
             return View(user);
         }
 
+
         // GET: Users/Delete/5
         public ActionResult Delete(int? id)
         {
@@ -134,6 +181,7 @@ namespace SmartLabel.Controllers
             return View(user);
         }
 
+
         // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -145,6 +193,7 @@ namespace SmartLabel.Controllers
             return RedirectToAction("Index");
         }
 
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -153,5 +202,11 @@ namespace SmartLabel.Controllers
             }
             base.Dispose(disposing);
         }
+
+        //public string alert(string msg,string type)
+        //{
+        //    string str = "swal({ title: 'Smart Label', text: '"+ msg +"', type: '"+ type +"',confirmButtonColor: 'lightskyblue', confirmButtonText: 'OK', closeOnConfirm: false });";
+        //    return str;
+        //}
     }
 }
