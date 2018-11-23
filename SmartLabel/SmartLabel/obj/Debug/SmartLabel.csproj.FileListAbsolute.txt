@@ -97,4 +97,3 @@ C:\Users\silak\Documents\GitHub\SilaRepo\SmartLabel\SmartLabel\bin\System.Web.He
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartLabel\SmartLabel\bin\System.Web.Mvc.xml
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartLabel\SmartLabel\obj\Debug\SmartLabel.dll
 C:\Users\silak\Documents\GitHub\SilaRepo\SmartLabel\SmartLabel\obj\Debug\SmartLabel.pdb
-C:\Users\silak\Documents\GitHub\SilaRepo\SmartLabel\SmartLabel\obj\Debug\SmartLabel.csprojResolveAssemblyReference.cache

@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using SmartLabel.Models;
 using System.Web.UI;
 using SmartLabel.Controllers;
+using System.Web.Security;
 
 namespace SmartLabel.Controllers
 {
@@ -31,6 +32,7 @@ namespace SmartLabel.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             User userArg = new Models.User();
             userArg.UserName = UserName;
             userArg.Password = Password;
@@ -41,6 +43,26 @@ namespace SmartLabel.Controllers
                 TempData["Type"] = "error";
 
                 return View("Login");
+            }
+
+            bool checkRespB = Convert.ToBoolean(Request.Form["ckb1"]);
+            //if (Request.Form["remember-me"] != null && Request.Form["remember-me"].Checked == true)
+            if (checkRespB)
+            {
+                bool IsRememberMe = user.IsRememberMe;
+                var authTicket = new FormsAuthenticationTicket(
+              1,
+              user.UserKey.ToString(),  //user id
+              DateTime.Now,
+              DateTime.Now.AddMinutes(20),  // expiry
+              IsRememberMe,  //true to remember
+              "", //roles 
+              "/"
+                );
+
+                //encrypt the ticket and add it to a cookie
+                HttpCookie cookie = new HttpCookie(FormsAuthentication.FormsCookieName, FormsAuthentication.Encrypt(authTicket));
+                Response.Cookies.Add(cookie);
             }
             //return View(user);
             Session["UserKey"] = user.UserKey;
@@ -202,6 +224,7 @@ namespace SmartLabel.Controllers
             }
             base.Dispose(disposing);
         }
+
 
         //public string alert(string msg,string type)
         //{

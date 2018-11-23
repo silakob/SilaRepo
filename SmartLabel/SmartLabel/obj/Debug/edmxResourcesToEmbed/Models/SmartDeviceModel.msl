@@ -25,6 +25,7 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="SmartDeviceModel.User">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="IsRememberMe" ColumnName="IsRememberMe" />
           <ScalarProperty Name="UserKey" ColumnName="UserKey" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="Password" ColumnName="Password" />

@@ -32,6 +32,7 @@ namespace SmartLabel.Models
         public Nullable<System.DateTime> ModifyDate { get; set; }
         public string NameAndSurname { get; set; }
         public Nullable<byte> Active { get; set; }
+        public bool IsRememberMe { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Promotion> Promotions { get; set; }

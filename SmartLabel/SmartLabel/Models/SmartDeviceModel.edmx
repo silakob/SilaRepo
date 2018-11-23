@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="SmartDeviceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="SmartDeviceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Promotion">
           <Key>
             <PropertyRef Name="PromotionKey" />
@@ -40,6 +40,7 @@
           <Property Name="ModifyDate" Type="datetime" />
           <Property Name="NameAndSurname" Type="varchar" MaxLength="200" />
           <Property Name="Active" Type="tinyint" />
+          <Property Name="IsRememberMe" Type="bit" Nullable="false" />
         </EntityType>
         <Association Name="FK_Promotion_Users">
           <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
@@ -77,8 +78,7 @@
             <End Role="Promotion" EntitySet="Promotion" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SmartDeviceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -121,6 +121,7 @@
           <Property Name="Active" Type="Byte" />
           <NavigationProperty Name="Promotions" Relationship="Self.FK_Promotion_Users" FromRole="Users" ToRole="Promotion" />
           <NavigationProperty Name="Promotions1" Relationship="Self.FK_Promotion_Users1" FromRole="Users" ToRole="Promotion" />
+          <Property Name="IsRememberMe" Type="Boolean" Nullable="false" />
         </EntityType>
         <Association Name="FK_Promotion_Users">
           <End Role="Users" Type="Self.User" Multiplicity="0..1" />
@@ -188,6 +189,7 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="SmartDeviceModel.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="IsRememberMe" ColumnName="IsRememberMe" />
                 <ScalarProperty Name="UserKey" ColumnName="UserKey" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="Password" ColumnName="Password" />

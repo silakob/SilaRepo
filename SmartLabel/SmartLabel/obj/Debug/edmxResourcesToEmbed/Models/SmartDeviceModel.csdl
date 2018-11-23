@@ -39,6 +39,7 @@
     <Property Name="Active" Type="Byte" />
     <NavigationProperty Name="Promotions" Relationship="Self.FK_Promotion_Users" FromRole="Users" ToRole="Promotion" />
     <NavigationProperty Name="Promotions1" Relationship="Self.FK_Promotion_Users1" FromRole="Users" ToRole="Promotion" />
+    <Property Name="IsRememberMe" Type="Boolean" Nullable="false" />
   </EntityType>
   <Association Name="FK_Promotion_Users">
     <End Role="Users" Type="Self.User" Multiplicity="0..1" />
