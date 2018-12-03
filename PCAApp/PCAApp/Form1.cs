@@ -53,6 +53,14 @@ namespace PCAApp
 
             Console.WriteLine("x1 = " + x1.ToString("G"));
             Console.WriteLine("x2 = " + x2.ToString("G"));
+
+
+            Console.WriteLine("meanX1 = " + meanX1.ToString("G"));
+            Console.WriteLine("meanX2 = " + meanX2.ToString("G"));
+
+            Console.WriteLine("sdX1 = " + sdX1.ToString("G"));
+            Console.WriteLine("sdX2 = " + sdX2.ToString("G"));
+
         }
     }
 }
